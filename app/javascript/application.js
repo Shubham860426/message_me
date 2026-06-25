@@ -1,3 +1,15 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+// app/javascript/application.js
+
 import "@hotwired/turbo-rails"
 import "controllers"
+import jQuery from "jquery"
+
+window.$ = window.jQuery = jQuery;
+
+import("semantic-ui").then(() => {
+  document.addEventListener("turbo:load", function() {
+    $('.ui.dropdown').dropdown();
+  });
+
+  $('.ui.dropdown').dropdown();
+});
