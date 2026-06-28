@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+User.create(username: "shivam", password: "password1")
+User.create(username: "deepak", password: "password2")
+User.create(username: "rohit", password: "password3")
+User.create(username: "manish", password: "password4")
+User.create(username: "sumita", password: "password5")
+User.create(username: "John", password: "password6")
