@@ -1,0 +1,12 @@
+<% flash.each do |message_type, message_content| %>
+  <% 
+    semantic_class = (message_type.to_s == 'error' || message_type.to_s == 'alert') ? 'error' : 'success'
+  %>
+  
+  <div class="ui <%= semantic_class %> message">
+    <i class="close icon"></i>
+    <div class="header">
+      <%= message_content %>
+    </div>
+  </div>
+<% end %>

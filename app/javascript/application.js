@@ -12,4 +12,7 @@ import("semantic-ui").then(() => {
   });
 
   $('.ui.dropdown').dropdown();
+  $(document).on('click', '.message .close', function() {
+    $(this).closest('.message').transition('fade');
+  });
 });

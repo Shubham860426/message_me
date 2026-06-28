@@ -12,7 +12,7 @@ class SessionController < ApplicationController
        redirect_to root_path
     else
       flash.now[:error] = "There is something wrong in your login information"
-      render 'new'
+      render 'new', status: :unprocessable_entity
     end
   end
 
