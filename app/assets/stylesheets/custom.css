@@ -1,4 +1,19 @@
 
-.chatbox {
-	height: 450px;
+.ui.card.chatbox {
+  height: 450px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+
+#messages {
+  height: 330px !important;    
+  max-height: 330px !important;
+  overflow-y: scroll !important; 
+  display: block !important;    
+}
+
+
+#message-container {
+  height: auto !important;
 }

@@ -1,0 +1,6 @@
+<%# app/views/messages/create.turbo_stream.erb %>
+<turbo-stream action="replace" target="message_body">
+  <template>
+    <input placeholder="Enter message..." autocomplete="off" type="text" name="message[body]" id="message_body" />
+  </template>
+</turbo-stream>
