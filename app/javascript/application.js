@@ -31,3 +31,8 @@ document.addEventListener("turbo:load", function() {
   scroll_bottom();
 });
 
+document.addEventListener("turbo:submit-end", function (event) {
+  if (event.target.matches("form.ui.reply.form")) {
+    event.target.reset();
+  }
+});
